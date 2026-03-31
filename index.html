@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nationwide Compliance Services</title>
+  <title>Nationwide Compliance Services | DOT Compliance Services in Seattle, Oregon, Idaho & Colorado</title>
   <meta
     name="description"
-    content="Nationwide Compliance Services helps carriers, brokers, and transportation businesses with USDOT registration, MCS-150 updates, consortium support, training, UCR, and compliance guidance."
+    content="Nationwide Compliance Services provides DOT compliance services, USDOT registration, MCS-150 updates, drug and alcohol consortium support, UCR filing, and FMCSA compliance help for businesses in Seattle, Oregon, Idaho, and Colorado."
   >
+  <meta
+    name="keywords"
+    content="Nationwide Compliance Services, DOT compliance Seattle, DOT compliance Oregon, DOT compliance Idaho, DOT compliance Colorado, USDOT number help, MCS-150 update, biennial update, UCR filing, FMCSA compliance, drug and alcohol consortium, clearinghouse registration, DOT compliance phone 206-238-5477, Seattle DOT services"
+  >
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nationwide Compliance Services | DOT Compliance Services">
+  <meta property="og:description" content="DOT compliance support for Seattle, Oregon, Idaho, and Colorado. USDOT setup, MCS-150 updates, UCR, consortium support, training, and FMCSA compliance guidance.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nationwide Compliance Services | DOT Compliance Services">
+  <meta name="twitter:description" content="DOT compliance support for Seattle, Oregon, Idaho, and Colorado including USDOT registration, UCR, MCS-150, and consortium services.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,39 +28,77 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nationwide Compliance Services",
+      "description": "DOT compliance services including USDOT registration, MCS-150 updates, UCR filing, FMCSA compliance support, drug and alcohol consortium administration, and training.",
+      "telephone": "+1-206-238-5477",
+      "email": "contact@nationwide-compliance.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Seattle",
+        "addressRegion": "WA",
+        "postalCode": "98105",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Seattle",
+        "Washington",
+        "Oregon",
+        "Idaho",
+        "Colorado"
+      ],
+      "serviceType": [
+        "DOT Compliance Services",
+        "USDOT Number Registration",
+        "MCS-150 Biennial Update",
+        "Unified Carrier Registration",
+        "FMCSA Compliance Support",
+        "Drug and Alcohol Consortium",
+        "Clearinghouse Registration",
+        "HazMat Compliance",
+        "DOT Training"
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
-    <div class="top-strip">
-      <div class="container top-strip-inner">
-        <nav class="micro-nav" aria-label="Utility">
-          <a href="#services">Services</a>
-          <a href="#resources">Resources</a>
-          <a href="#company">Company</a>
-        </nav>
-        <div class="top-strip-actions">
-          <a href="tel:2062385477">206-238-5477</a>
-          <a class="cta-link" href="#contact">Free Consultation</a>
-        </div>
-      </div>
-    </div>
-
     <div class="container header-main">
       <a class="brand" href="#">
         <img class="brand-logo" src="logo.png" alt="Nationwide Compliance Services logo">
       </a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#resources">Resources</a>
-        <a href="#company">Company</a>
-        <a href="#training">Training</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-right">
+        <a class="header-phone" href="tel:2062385477">206-238-5477</a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#resources">Resources</a>
+          <a href="#company">Company</a>
+          <a href="#training">Training</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-slider" aria-hidden="true">
+        <div class="hero-slide hero-slide-1 is-active">
+          <div class="hero-slide-label">OSHA and Workplace Safety Support</div>
+        </div>
+        <div class="hero-slide hero-slide-2">
+          <div class="hero-slide-label">Trucking and DOT Compliance Services</div>
+        </div>
+        <div class="hero-slide hero-slide-3">
+          <div class="hero-slide-label">Audits, Records, and Driver Programs</div>
+        </div>
+        <div class="hero-slide hero-slide-4">
+          <div class="hero-slide-label">Regulatory Guidance for Growing Fleets</div>
+        </div>
+      </div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="section-kicker">Compliance Guidance You Need To Succeed</p>
@@ -121,7 +172,14 @@
           <p class="form-note">
             By providing your phone number and submitting this form, you consent to receive calls, emails, and text messages regarding your request and related compliance services.
           </p>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
         </form>
+      </div>
+      <div class="hero-slider-controls" aria-label="Background slider controls">
+        <button class="hero-dot is-active" type="button" aria-label="Show OSHA slide"></button>
+        <button class="hero-dot" type="button" aria-label="Show trucking slide"></button>
+        <button class="hero-dot" type="button" aria-label="Show audit slide"></button>
+        <button class="hero-dot" type="button" aria-label="Show regulatory slide"></button>
       </div>
     </section>
 
@@ -297,12 +355,24 @@
         </p>
       </div>
       <div class="footer-contact-block">
-        <p>
-          <a href="tel:2062385477">206-238-5477</a><br>
-          <a href="mailto:contact@nationwide-compliance.com">contact@nationwide-compliance.com</a><br>
-          <a href="mailto:help@nationwide-compliance.com">help@nationwide-compliance.com</a><br>
-          Seattle, WA 98105
-        </p>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="footer-icon" aria-hidden="true">☎</span>
+            <a href="tel:2062385477">206-238-5477</a>
+          </li>
+          <li>
+            <span class="footer-icon" aria-hidden="true">✉</span>
+            <a href="mailto:contact@nationwide-compliance.com">contact@nationwide-compliance.com</a>
+          </li>
+          <li>
+            <span class="footer-icon" aria-hidden="true">✉</span>
+            <a href="mailto:help@nationwide-compliance.com">help@nationwide-compliance.com</a>
+          </li>
+          <li>
+            <span class="footer-icon" aria-hidden="true">⌂</span>
+            <span>Seattle, Idaho, Oregon, and Colorado</span>
+          </li>
+        </ul>
       </div>
       <div class="footer-meta-block">
         <p>
@@ -313,5 +383,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
