@@ -269,7 +269,7 @@ a {
   position: relative;
   z-index: 1;
   grid-template-columns: minmax(0, 1.15fr) minmax(330px, 420px);
-  padding: 62px 0;
+  padding: 48px 0;
   align-items: start;
 }
 
@@ -314,7 +314,7 @@ a {
 .hero h1 {
   font-size: clamp(2.3rem, 4vw, 4rem);
   line-height: 1.12;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   max-width: 12ch;
 }
 
@@ -332,14 +332,27 @@ a {
 
 .hero-text {
   color: rgba(255, 255, 255, 0.86);
-  max-width: 62ch;
+  max-width: 46ch;
+  margin-bottom: 0;
+}
+
+.hero-rotator {
+  display: inline-block;
+  min-width: 8.8ch;
+  color: #ffd2d6;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.hero-rotator.is-changing {
+  opacity: 0.15;
+  transform: translateY(4px);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 28px 0 22px;
+  margin: 20px 0 18px;
 }
 
 .button {

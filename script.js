@@ -1,5 +1,6 @@
 const heroSlides = document.querySelectorAll(".hero-slide");
 const heroDots = document.querySelectorAll(".hero-dot");
+const heroRotator = document.querySelector(".hero-rotator");
 const siteHeader = document.querySelector(".site-header");
 const contactForm = document.querySelector(".lead-form");
 const formStatus = document.querySelector("#form-status");
@@ -40,6 +41,27 @@ if (heroSlides.length && heroDots.length) {
   });
 
   startSlider();
+}
+
+if (heroRotator) {
+  const terms = (heroRotator.dataset.terms || "")
+    .split("|")
+    .map((term) => term.trim())
+    .filter(Boolean);
+
+  if (terms.length > 1) {
+    let activeTermIndex = 0;
+
+    window.setInterval(() => {
+      activeTermIndex = (activeTermIndex + 1) % terms.length;
+      heroRotator.classList.add("is-changing");
+
+      window.setTimeout(() => {
+        heroRotator.textContent = terms[activeTermIndex];
+        heroRotator.classList.remove("is-changing");
+      }, 180);
+    }, 2200);
+  }
 }
 
 if (siteHeader) {
