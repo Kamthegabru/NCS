@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nationwide-compliance.com/sitemap.xml
