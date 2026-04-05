@@ -693,6 +693,20 @@ a {
   margin: 0;
 }
 
+.footer-brand-block a {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+  text-underline-offset: 0.16em;
+}
+
+.footer-brand-block a:hover,
+.footer-brand-block a:focus-visible {
+  color: #ffd2d6;
+  text-decoration-color: currentColor;
+}
+
 .footer-inner h3 {
   margin: 0 0 10px;
   font-family: "Montserrat", Arial, sans-serif;
